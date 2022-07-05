@@ -20,12 +20,17 @@ body{
     font-family: 'Fraunces', serif; 
     font-size: 14px;
     background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container{
+    display: block;
     width: 344px;
     height: 613px;
-    margin: 28px auto;
     border-radius: 8px;
     overflow: hidden;
     background-color: var(--White);
@@ -138,5 +143,10 @@ body{
     }
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    position: absolute;
+    bottom: 0;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
